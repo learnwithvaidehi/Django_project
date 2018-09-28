@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{%block title%}Home{% endblock %}
+{% block base %}
+{% load static %}
+<div class="col-sm-6">
+    <br><br>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">New Enquiry
+    </button>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <br><br>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Location</th>
+                <th>Courses</th>
+                <th>Remark</th>
+                <th></th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>Edit</td>
+                <td>Follow-up</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="row mt-80">
+            <div class="col-sm-12">
+                <div class="accordion-3">
+                    <div class="panel-group" id="a3" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="a3heading1">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#a3"
+                                       href="#a3body1" aria-expanded="false" aria-controls="a3body1">
+                                        Name 1 Edit Follow-up Status
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="a3body1" class="panel-collapse collapse in" role="tabpanel"
+                                 aria-labelledby="a3heading1">
+                                <div class="panel-body">
+                                    Name:<br>
+                                    Phone:<br>
+                                    Email:<br>
+                                    Location:<br>
+                                    Courses:<br>
+                                    Remark:<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="a3heading2">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#a3"
+                                       href="#a3body2" aria-expanded="false" aria-controls="a3body2">
+                                        Name 2 Edit Follow-up Status
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="a3body2" class="panel-collapse collapse" role="tabpanel"
+                                 aria-labelledby="a3heading2">
+                                <div class="panel-body">
+                                    Name:<br>
+                                    Phone:<br>
+                                    Email:<br>
+                                    Location:<br>
+                                    Courses:<br>
+                                    Remark:<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="a3heading3">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#a3"
+                                       href="#a3body3" aria-expanded="false" aria-controls="a3body3">
+                                        Name 3 Edit Follow-up Status
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="a3body3" class="panel-collapse collapse" role="tabpanel"
+                                 aria-labelledby="a3heading3">
+                                <div class="panel-body">
+                                    Name:<br>
+                                    Phone:<br>
+                                    Email:<br>
+                                    Location:<br>
+                                    Courses:<br>
+                                    Remark:<br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="modal1" data-open-onload="false" data-open-delay="750" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <div class="modal-body"
+                     style="background-image:url('images/modal-background.jpg'); background-size:cover">
+                    <div class="row">
+                        <div class="col-md-5 pull-right bginverse pt-20 pb-20">
+                            <h4 class="heading">Subscribe to our Newsletter!</h4>
+                            <p>Trust us, you will absolutely love our newletter feed!</p>
+                            <br/>
+                            <form>
+                                <div class="form-group">
+                                    <input id="contact-name" type="text" class="form-control">
+                                    <label for="contact-name">Your Name</label>
+                                </div>
+                                <div class="form-group">
+                                    <input id="contact-email" type="text" class="form-control">
+                                    <label for="contact-email">Email ID</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
