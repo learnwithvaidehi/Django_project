@@ -19,9 +19,13 @@ from django.urls import path
 from django.views.generic import TemplateView
 
 from enquiry import views
+from enrollment import views as v1
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', views.EnquiryView.as_view(), name="enquiry"),
-    path('', TemplateView.as_view(template_name="listenquries.html"))
+    path('', views.listEnquiries, name="listEnquiries"),
+    path('<int:pk>/edit/', views.enquiryEditView, name='editenquiry'),
+    path('<int:pk>/followup/', views.followUpView, name='followupenquiry'),
+
+    path('enroll/<int:pk>/', v1.enroll, name="enroll"),
 ]

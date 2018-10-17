@@ -32,6 +32,15 @@
     background-color: #fff7f7;
 }
 
+.is-invalid{
+border-color: #e69e9e;
+    background-color: #fff7f7;
+}
+
+.invalid-feedback{
+    color: #ff0000
+}
+
 textarea.form-control, select.form-control{
     border-radius: 3px;
 }
